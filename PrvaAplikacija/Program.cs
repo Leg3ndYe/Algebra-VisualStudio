@@ -10,11 +10,19 @@ namespace PrvaAplikacija
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
+            ColorChanger(ConsoleColor.Red, ConsoleColor.Yellow);
+            Console.Clear();
+            Console.WriteLine("Hello World!");
+            ColorChanger(ConsoleColor.Blue, ConsoleColor.Red);
             Console.WriteLine("My name is");
 
             Console.ReadKey();
+        }
+        public static void ColorChanger(ConsoleColor background, ConsoleColor foreground)
+        {
+            Console.ForegroundColor = foreground;
+            Console.BackgroundColor = background;
         }
     }
 }
