@@ -44,8 +44,15 @@ namespace switch_izracun
                     Console.WriteLine($"{a} - {b} = {a - b}");
                     break;
                 case 4:
-                    Console.WriteLine($"{a} / {b} = {a / b}");
-                    break;
+                    if (b == 0 || a == 0)
+                    {
+                        Console.WriteLine("Nije moguce dijeliti s 0!!");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{a} / {b} = {a / b}");
+                    }
+                        break;
                 case 5:
                     Console.WriteLine($"{a} % {b} = {a % b}");
                     break;
