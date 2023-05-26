@@ -56,6 +56,10 @@ namespace Kolekcije_uvod
             {
                 Console.WriteLine(brojevi);
             }
+
+            List<string> tekstovi = new List<string>();
+            List<bool> boolovi = new List<bool>();
+            List<ArrayList> lista_listi = new List<ArrayList>();
         }
     }
 }
